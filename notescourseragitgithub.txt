@@ -1,0 +1,111 @@
+Kan kun gøre det på mit lokale drev LQR ikke fællesdrevene. 
+Gør det igennem mobaxterm kan ikke bruge windows prompten
+#Lavede repository github
+git config --global user.name 'Casper Poulsen' 
+git config --global user.email 'cspoulsen@hotmail.com' 
+git clone https://github.com/csapou/CoolSafe_FD.git
+cd CoolSafe_FD/
+git add * #Adds all new 
+git commit -m 'added a new file'
+git status
+git push
+
+
+
+Git Github Coursera
+# 1 Learning how Git works, and how to create a remote depository
+Git providers - Github, GitLab, BitBucket, Stash...
+Sign in/create account on github and repository 
+# 2 Push a versioned timeline of your coding history
+git config --global user.name 'Casper Poulsen' #Have it on git version controls log
+git config --global user.email 'cspoulsen@hotmail.com' #Have it on git version controls log
+git clone https.... #copy from github code -->
+cd learning_git #Guess have to navigate to place you want to clone repository then git clone
+git status #
+nano new_file.txt #Creating a new file ctrl x to save then y
+ls
+git status
+git add new_file.txt
+git add * #Adds all new 
+git commit -m 'added a new file'
+git status
+git push #asks for username and password
+# 3 consume and navigate Git/Github repositories
+cd .. #Wanted to make a new folder on desktop i missed but it does not matter
+mkdir folder2
+cd folder2
+git clone https.... #copy from github code -->
+cd learning_git
+nano new_file2.txt
+git add * #Adds all new 
+git commit -m 'test'
+git push #asks for username and password #Now try to go back to the original directory
+cd ..
+cd ..
+git pull
+git log #See different versions can go to a specific version using the 6 first signs, master is the present, have to perform git log every time since numbers change
+git checkout (fx.) 2f994a
+ls
+git checkout master
+ls
+# 4 Understand how Git timelines work
+https://github.com/danlessa/cadCAD
+# 5 Use branches as alternate code timelines
+git clone https://github.com/danlessa/cadCAD.git #Have several branches
+cd cadCAD
+git branch -a #shows all
+git branch # shows the ones I'm working in
+git checkout tweaks #A specifik branch name 
+ls
+git log 
+git checkout master
+git log #to see they are different, use q to get back to terminal
+git checkout -b new_branch #To create are new branch here from the master
+git branch #tells you which branch you are on
+git merge master #Now just made it new_branch so no differences 
+git merge tweaks #Can see all the differences
+# 6 Fork repositories and keep them synced
+#Find repository and press fork in github, now as previous 
+git clone https://github.com/danlessa/cadCAD.git
+nano sample_file #make a small change
+git add *
+git commit -m new_file #Why not called sample_file? -m is the message
+git push
+#How to sync
+#From other source#Before you can sync your fork with an upstream repository, you must configure a remote that points to the upstream repository in Git.
+git remote add upstream https://github.com/danlessa/cadCAD.git
+git remote -v
+git clean #Search online
+git pull upstream master #Sync a fork of a repository to keep it up-to-date with the upstream repository
+# 7 Make your fork mainstream through pull requests
+# git stash # did not explain
+git pull 
+nano last_file.txt #edit text
+git add *
+git commit -m lat_file
+git push
+#at github there is a button new pull request
+#Can see a comparison of changes and then go to bottom 
+#Press create new pull request
+#Write title and comment and press create pull request
+#Now maintainers can accept the pull request 
+
+
+
+
+Using SSH for not having to input passwords when passing Git commands
+https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+
+Creating a github.io personal website inside a GitHub repository
+https://guides.github.com/features/pages/
+
+GitHub flow
+https://guides.github.com/introduction/flow/
+
+How to Contribute to Open Source
+https://opensource.guide/how-to-contribute/
+
+Mastering Markdown
+https://guides.github.com/features/mastering-markdown/
+
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
